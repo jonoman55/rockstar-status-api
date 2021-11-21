@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
+// TODO : Add rate limiter (express-rate-limit)
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
