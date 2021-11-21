@@ -1,0 +1,415 @@
+{
+  "services": [
+    {
+      "id": 6,
+      "name": "Rockstar Games Launcher",
+      "tag": "rglauncher",
+      "category_id": 360002126893,
+      "sandbox_category_id": 360002289153,
+      "alert_status": 2,
+      "priority": 6,
+      "updated": "2021-11-11T20:02:00",
+      "message": "\u003Cp\u003EServices for the Rockstar Games Launcher and supported titles are temporarily offline for maintenance. \u003Cp\u003EServices will return as soon as maintenance is completed.",
+      "status": 2,
+      "recent_update": "2021-11-11T20:02:00",
+      "hash": "06c41dcb6a457f1291ddadb77efd96f53aaa6c9e",
+      "status_tag": "Down"
+    },
+    {
+      "id": 1,
+      "name": "General",
+      "tag": "general",
+      "category_id": null,
+      "sandbox_category_id": null,
+      "alert_status": 0,
+      "priority": 1,
+      "updated": "2021-11-11T17:00:00",
+      "message": "",
+      "status": 1,
+      "recent_update": "2021-11-11T17:00:00",
+      "hash": "61468f2f39c39a0488061b046e7ebbe0fff60c2a",
+      "status_tag": "Up"
+    },
+    {
+      "id": 2,
+      "name": "Red Dead Online",
+      "tag": "rdo",
+      "category_id": 115001624507,
+      "sandbox_category_id": 115002265888,
+      "alert_status": 0,
+      "priority": 2,
+      "updated": "2021-07-31T22:00:00",
+      "message": "",
+      "status": 3,
+      "recent_update": "2021-11-11T23:00:00",
+      "hash": "8e83f8c5ad3231e3bc1d63a98a6ce817d3157ced",
+      "status_tag": "Limited"
+    },
+    {
+      "id": 3,
+      "name": "Grand Theft Auto Online",
+      "tag": "gtao",
+      "category_id": 200013306,
+      "sandbox_category_id": 115002270987,
+      "alert_status": 0,
+      "priority": 3,
+      "updated": "2021-10-14T14:00:00",
+      "message": "\u003Cp\u003ERockstar services supporting online play and profile stats in GTAV on PC will be temporarily offline October 14 between 7:00 and 9:00 UTC. \u003Cp\u003EThis maintenance is not expected to take the entire scheduled window and services will return as soon as maintenance is completed.",
+      "status": 3,
+      "recent_update": "2021-11-11T21:20:00",
+      "hash": "70aea283c025936ec737e99a3ceadeb40efca5f7",
+      "status_tag": "Limited"
+    },
+    {
+      "id": 4,
+      "name": "Social Club",
+      "tag": "sc",
+      "category_id": 200013106,
+      "sandbox_category_id": 115002270967,
+      "alert_status": 0,
+      "priority": 4,
+      "updated": "2021-07-08T11:56:38",
+      "message": "",
+      "status": 1,
+      "recent_update": "2021-07-08T11:56:38",
+      "hash": "dcbac7bc4108cb1186cc89736bee9c3b46915ae6",
+      "status_tag": "Up"
+    },
+    {
+      "id": 5,
+      "name": "Support",
+      "tag": "support",
+      "category_id": null,
+      "sandbox_category_id": null,
+      "alert_status": 0,
+      "priority": 5,
+      "updated": "2021-11-08T18:35:00",
+      "message": "\u003CP\u003EWe are aware of an issue affecting Prime Gaming players who became eligible for Rockstar Games X  Prime Gaming Benefits in Grand Theft Auto Online after November 1, 2021. \u003Ca href=https:\/\/support.rockstargames.com\/articles\/4410000633235\/\u003EDetails here.\u003C\/a\u003E",
+      "status": 1,
+      "recent_update": "2021-11-08T18:35:00",
+      "hash": "3109e4df36de13c61296e8c51ad44a3b75af8c9b",
+      "status_tag": "Up"
+    }
+  ],
+  "statuses": [
+    {
+      "id": 1,
+      "name": "General",
+      "tag": "general",
+      "category_id": null,
+      "sandbox_category_id": null,
+      "alert_status": 0,
+      "priority": 1,
+      "updated": "2021-11-11T17:00:00",
+      "services_platforms": [
+        {
+          "id": 9,
+          "service_id": 1,
+          "name": "Alert",
+          "service_status_id": 1,
+          "priority": 1,
+          "updated": "2021-07-08T11:56:38",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        }
+      ],
+      "message": "",
+      "status": 1,
+      "recent_update": "2021-11-11T17:00:00",
+      "hash": "61468f2f39c39a0488061b046e7ebbe0fff60c2a",
+      "status_tag": "Up"
+    },
+    {
+      "id": 2,
+      "name": "Red Dead Online",
+      "tag": "rdo",
+      "category_id": 115001624507,
+      "sandbox_category_id": 115002265888,
+      "alert_status": 0,
+      "priority": 2,
+      "updated": "2021-07-31T22:00:00",
+      "services_platforms": [
+        {
+          "id": 15,
+          "service_id": 2,
+          "name": "PC",
+          "service_status_id": 2,
+          "priority": 0,
+          "updated": "2021-11-11T23:00:00",
+          "service_status": {
+            "id": 2,
+            "status": "DOWN"
+          }
+        },
+        {
+          "id": 2,
+          "service_id": 2,
+          "name": "Xbox One",
+          "service_status_id": 1,
+          "priority": 2,
+          "updated": "2021-11-04T16:00:00",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        },
+        {
+          "id": 1,
+          "service_id": 2,
+          "name": "PS4",
+          "service_status_id": 1,
+          "priority": 2,
+          "updated": "2021-09-21T16:00:00",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        },
+        {
+          "id": 16,
+          "service_id": 2,
+          "name": "Stadia",
+          "service_status_id": 1,
+          "priority": 4,
+          "updated": "2021-07-25T22:00:00",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        },
+        {
+          "id": 17,
+          "service_id": 2,
+          "name": "Xbox Cloud Gaming",
+          "service_status_id": 1,
+          "priority": 6,
+          "updated": "2021-07-08T11:56:38",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        }
+      ],
+      "message": "",
+      "status": 3,
+      "recent_update": "2021-11-11T23:00:00",
+      "hash": "8e83f8c5ad3231e3bc1d63a98a6ce817d3157ced",
+      "status_tag": "Limited"
+    },
+    {
+      "id": 3,
+      "name": "Grand Theft Auto Online",
+      "tag": "gtao",
+      "category_id": 200013306,
+      "sandbox_category_id": 115002270987,
+      "alert_status": 0,
+      "priority": 3,
+      "updated": "2021-10-14T14:00:00",
+      "services_platforms": [
+        {
+          "id": 3,
+          "service_id": 3,
+          "name": "PC",
+          "service_status_id": 2,
+          "priority": 1,
+          "updated": "2021-11-11T21:20:00",
+          "service_status": {
+            "id": 2,
+            "status": "DOWN"
+          }
+        },
+        {
+          "id": 4,
+          "service_id": 3,
+          "name": "PS4",
+          "service_status_id": 1,
+          "priority": 2,
+          "updated": "2021-09-23T09:45:00",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        },
+        {
+          "id": 5,
+          "service_id": 3,
+          "name": "Xbox One",
+          "service_status_id": 1,
+          "priority": 3,
+          "updated": "2021-09-23T09:45:00",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        },
+        {
+          "id": 6,
+          "service_id": 3,
+          "name": "PS3",
+          "service_status_id": 1,
+          "priority": 4,
+          "updated": "2021-08-31T22:25:00",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        },
+        {
+          "id": 7,
+          "service_id": 3,
+          "name": "Xbox 360",
+          "service_status_id": 1,
+          "priority": 5,
+          "updated": "2021-10-26T18:15:00",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        },
+        {
+          "id": 18,
+          "service_id": 3,
+          "name": "Xbox Cloud Gaming",
+          "service_status_id": 1,
+          "priority": 6,
+          "updated": "2021-07-08T11:56:38",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        }
+      ],
+      "message": "\u003Cp\u003ERockstar services supporting online play and profile stats in GTAV on PC will be temporarily offline October 14 between 7:00 and 9:00 UTC. \u003Cp\u003EThis maintenance is not expected to take the entire scheduled window and services will return as soon as maintenance is completed.",
+      "status": 3,
+      "recent_update": "2021-11-11T21:20:00",
+      "hash": "70aea283c025936ec737e99a3ceadeb40efca5f7",
+      "status_tag": "Limited"
+    },
+    {
+      "id": 4,
+      "name": "Social Club",
+      "tag": "sc",
+      "category_id": 200013106,
+      "sandbox_category_id": 115002270967,
+      "alert_status": 0,
+      "priority": 4,
+      "updated": "2021-07-08T11:56:38",
+      "services_platforms": [
+        {
+          "id": 8,
+          "service_id": 4,
+          "name": "All Features",
+          "service_status_id": 1,
+          "priority": 1,
+          "updated": "2021-07-08T11:56:38",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        }
+      ],
+      "message": "",
+      "status": 1,
+      "recent_update": "2021-07-08T11:56:38",
+      "hash": "dcbac7bc4108cb1186cc89736bee9c3b46915ae6",
+      "status_tag": "Up"
+    },
+    {
+      "id": 5,
+      "name": "Support",
+      "tag": "support",
+      "category_id": null,
+      "sandbox_category_id": null,
+      "alert_status": 0,
+      "priority": 5,
+      "updated": "2021-11-08T18:35:00",
+      "services_platforms": [
+        {
+          "id": 10,
+          "service_id": 5,
+          "name": "Alert",
+          "service_status_id": 1,
+          "priority": 1,
+          "updated": "2021-07-08T11:56:38",
+          "service_status": {
+            "id": 1,
+            "status": "UP"
+          }
+        }
+      ],
+      "message": "\u003CP\u003EWe are aware of an issue affecting Prime Gaming players who became eligible for Rockstar Games X  Prime Gaming Benefits in Grand Theft Auto Online after November 1, 2021. \u003Ca href=https:\/\/support.rockstargames.com\/articles\/4410000633235\/\u003EDetails here.\u003C\/a\u003E",
+      "status": 1,
+      "recent_update": "2021-11-08T18:35:00",
+      "hash": "3109e4df36de13c61296e8c51ad44a3b75af8c9b",
+      "status_tag": "Up"
+    },
+    {
+      "id": 6,
+      "name": "Rockstar Games Launcher",
+      "tag": "rglauncher",
+      "category_id": 360002126893,
+      "sandbox_category_id": 360002289153,
+      "alert_status": 2,
+      "priority": 6,
+      "updated": "2021-11-11T20:02:00",
+      "services_platforms": [
+        {
+          "id": 11,
+          "service_id": 6,
+          "name": "Authentication",
+          "service_status_id": 2,
+          "priority": 1,
+          "updated": "2021-11-11T18:55:00",
+          "service_status": {
+            "id": 2,
+            "status": "DOWN"
+          }
+        },
+        {
+          "id": 12,
+          "service_id": 6,
+          "name": "Store",
+          "service_status_id": 2,
+          "priority": 2,
+          "updated": "2021-11-11T18:55:00",
+          "service_status": {
+            "id": 2,
+            "status": "DOWN"
+          }
+        },
+        {
+          "id": 13,
+          "service_id": 6,
+          "name": "Cloud Services",
+          "service_status_id": 2,
+          "priority": 3,
+          "updated": "2021-11-11T18:55:00",
+          "service_status": {
+            "id": 2,
+            "status": "DOWN"
+          }
+        },
+        {
+          "id": 14,
+          "service_id": 6,
+          "name": "Downloads",
+          "service_status_id": 2,
+          "priority": 4,
+          "updated": "2021-11-11T18:55:00",
+          "service_status": {
+            "id": 2,
+            "status": "DOWN"
+          }
+        }
+      ],
+      "message": "\u003Cp\u003EServices for the Rockstar Games Launcher and supported titles are temporarily offline for maintenance. \u003Cp\u003EServices will return as soon as maintenance is completed.",
+      "status": 2,
+      "recent_update": "2021-11-11T20:02:00",
+      "hash": "06c41dcb6a457f1291ddadb77efd96f53aaa6c9e",
+      "status_tag": "Down"
+    }
+  ],
+  "updated": "November 11, 2021 at 6:00:00 PM EST"
+}
