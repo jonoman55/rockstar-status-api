@@ -15,7 +15,7 @@ function parseData(data, type) {
                 message: formatMessage(data?.message),
                 updated: data?.updated,
                 status: data?.status_tag,
-                services_platforms: parsePlatforms(data?.services_platforms),
+                services_platforms: parsePlatforms(data?.services_platforms)
             };
         default:
             return data;
@@ -26,8 +26,8 @@ function formatMessage(message) {
     return message.replace(/<\/?[^>]+>/gi, '').trim();
 };
 
-function parsePlatforms(platform) {
-    return platform.map((p) => {
+function parsePlatforms(platforms) {
+    return platforms.map((p) => {
         return {
             id: p?.id,
             name: p?.name,
