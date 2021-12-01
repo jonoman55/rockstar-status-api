@@ -2,6 +2,7 @@ const router = require('express').Router();
 const parseData = require('../helpers/parser');
 const data = require('./status.json');
 
+// TODO : remove when testing is done
 // API File Test Routes 
 router.get('/', (req, res) => {
     console.log('/ called...');
@@ -10,25 +11,24 @@ router.get('/', (req, res) => {
             success: true,
             message: 'Rockstar Services Status API',
             status: 'UP',
-            updated: `${new Date().toLocaleString()}`
+            updated: `${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}`
         });
     } catch (error) {
         res.status(500).json({
             success: false,
             message: error,
             status: 'DOWN',
-            updated: `${new Date().toLocaleString()}`
+            updated: `${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}`
         });
     }
 });
 
-// TODO : remove when testing is done
 router.get('/all', (req, res) => {
     console.log('/file/all called...');
     res.status(200).json(data);
 });
 
-const fileTypes = ['services', 'statuses'];
+const fileTypes = ['services', 'statuses', 'updated'];
 
 const fetchFromFileByType = (type) => {
     if (type === fileTypes[0]) {
@@ -38,6 +38,10 @@ const fetchFromFileByType = (type) => {
     if (type === fileTypes[1]) {
         const { statuses } = data;
         return statuses.map((status) => parseData(status, type));
+    }
+    if (type === fileTypes[2]) {
+        const { updated } = data;
+        return updated;
     }
 };
 
@@ -89,6 +93,19 @@ router.get(`/${statusesFile}/:id`, (req, res) => {
             s.id === Number(req.params.id)
         );
         res.status(200).json(status);
+    } catch (error) {
+        console.log(error)
+        res.status(500).json({ error });
+    }
+});
+
+const updatedFile = fileTypes[2];
+
+router.get(`/${updatedFile}`, async (req, res) => {
+    try {
+        console.log(`/${updatedFile} called...`);
+        const data = await fetchByType(updatedFile);
+        res.status(200).json({ updated: data });
     } catch (error) {
         console.log(error)
         res.status(500).json({ error });

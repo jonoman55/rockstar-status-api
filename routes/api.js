@@ -10,14 +10,14 @@ router.get('/', (req, res) => {
             success: true,
             message: 'Rockstar Services Status API',
             status: 'UP',
-            updated: `${new Date().toLocaleString()}`
+            updated: `${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}`
         });
     } catch (error) {
         res.status(500).json({
             success: false,
             message: error,
             status: 'DOWN',
-            updated: `${new Date().toLocaleString()}`
+            updated: `${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}`
         });
     }
 });
@@ -35,7 +35,7 @@ router.get(`/all`, async (req, res) => {
     }
 });
 
-const types = ['services', 'statuses'];
+const types = ['services', 'statuses', 'updated'];
 
 const fetchByType = async (type) => {
     if (type === types[0]) {
@@ -45,6 +45,10 @@ const fetchByType = async (type) => {
     if (type === types[1]) {
         const { statuses } = await fetchData();
         return statuses.map((status) => parseData(status, type));
+    }
+    if (type === types[2]) {
+        const { updated } = await fetchData();
+        return updated;
     }
 };
 
@@ -96,6 +100,19 @@ router.get(`/${statuses}/:id`, async (req, res) => {
             s.id === Number(req.params.id)
         );
         res.status(200).json(status);
+    } catch (error) {
+        console.log(error)
+        res.status(500).json({ error });
+    }
+});
+
+const updated = types[2];
+
+router.get(`/${updated}`, async (req, res) => {
+    try {
+        console.log(`/${updated} called...`);
+        const data = await fetchByType(updated);
+        res.status(200).json({ updated: data });
     } catch (error) {
         console.log(error)
         res.status(500).json({ error });

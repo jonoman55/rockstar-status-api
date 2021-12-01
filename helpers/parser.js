@@ -17,6 +17,10 @@ function parseData(data, type) {
                 status: data?.status_tag,
                 services_platforms: parsePlatforms(data?.services_platforms)
             };
+        case 'updated':
+            return {
+                updated: data?.updated
+            };
         default:
             return data;
     };

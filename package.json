@@ -1,7 +1,7 @@
 {
   "name": "jc-rockstar-status-api",
   "version": "1.0.0",
-  "description": "Rockstar Service Status API",
+  "description": "Rockstar Services Status API",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
