@@ -7,7 +7,11 @@
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
-  "keywords": ["Node", "Express", "JavaScript"],
+  "keywords": [
+    "Node",
+    "Express",
+    "JavaScript"
+  ],
   "author": "John Chiappetta",
   "license": "MIT",
   "dependencies": {
@@ -21,7 +25,6 @@
     "winston": "^3.8.1"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "nodemon": "^2.0.15"
   }
 }

@@ -16,4 +16,4 @@ You will also see any errors in the console.
 
 ### `npm start`
 
-Launches the app in production mode.\
+Launches the app in production mode.
