@@ -1,3 +1,11 @@
+# config
 .env
+
+# misc
 .gitpod.yml
+
+# logs
+logs
+
+# depedencies
 node_modules

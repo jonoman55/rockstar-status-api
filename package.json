@@ -5,18 +5,23 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "cross-env-shell NODE_ENV=production node index.js"
   },
-  "keywords": [],
-  "author": "jonoman55 / jc-dev",
-  "license": "ISC",
+  "keywords": ["Node", "Express", "JavaScript"],
+  "author": "John Chiappetta",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.24.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "express-rate-limit": "^6.4.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.8.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^2.0.15"
   }
 }
