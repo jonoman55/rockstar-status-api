@@ -54,6 +54,7 @@ const fetchByType = async (type, tz) => {
 };
 
 module.exports = {
+    fetchData,
     fetchByType,
     fetchFromFileByType
 };

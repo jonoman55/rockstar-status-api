@@ -1,7 +1,7 @@
 const asyncHandler = require('express-async-handler');
 
 const { types } = require('../constants');
-const { fetchByType } = require('../services');
+const { fetchByType, fetchData } = require('../services');
 
 const getApiStatus = (req, res) => {
     try {
